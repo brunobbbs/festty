@@ -26,8 +26,13 @@
         {% for evento in eventos %}
             <ul class="box">
               <li>
-              <a href="{% url eventos:informacoes evento.slug %}">
-                    <img src="{{ evento.imagem.url }}" width="166" height="222" />
+              <a href="{% url eventos:informacoes evento.slug %}"
+                 title="{{ evento.nome }}">
+                 <img src="{{ evento.imagem.url }}" 
+                      width="166" 
+                      height="222" 
+                      alt="{{ evento.nome }}"
+                      title="{{ evento.nome }}" />
                     <div class="fb-comments-count" data-href="{% absurl eventos:informacoes evento.slug %}"><span class="coment">comentários</span><span class="numero">0</span></div>
                     <p class="evento">{{ evento.nome }}</p>
                 </a>

@@ -25,9 +25,14 @@
 
 
         {% for evento in eventos %}
-        <a href="{% url eventos:informacoes evento.slug %}">
+        <a href="{% url eventos:informacoes evento.slug %}"
+           title="{{ evento.nome }}">
             <div class="Col">
-                <img src="{{ evento.imagem.url }}" width="201" height="291" /><h1>{{ evento.nome|truncatewords_by_chars:40 }}</h1>
+                <img src="{{ evento.imagem.url }}" 
+                     width="201" 
+                     height="291"
+                     alt="{{ evento.nome }}"
+                     title="{{ evento.nome }}" /><h1>{{ evento.nome|truncatewords_by_chars:40 }}</h1>
                 <h2>{{ evento.data|date:"d" }} {{ evento.data|date:"M" }}</h2>
                 <div class="comment">
                     <div class="fb-comments-count"  data-href="{% absurl eventos:informacoes evento.slug %}">0</div>
