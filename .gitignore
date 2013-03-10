@@ -12,3 +12,16 @@ database.db
 
 # Ignorar manage.py
 manage.py
+
+# Migrations - South
+**/migrations/*
+
+# Outros arquivos genericos
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+
+# Ignorando a pasta media/
+media/*
