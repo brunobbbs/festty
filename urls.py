@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import patterns, include, url
+from django.views.generic.simple import direct_to_template
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -19,6 +20,9 @@ urlpatterns = patterns('',
     url(r'^$', 'festty.eventos.views.index', name='index'),
     url(r'^eventos/', include('festty.eventos.urls', namespace='eventos')),
     url(r'^calendario/', include('festty.calendario.urls', namespace='calendario')),
+
+    # Robots.txt
+    url(r'^robots\.txt$', direct_to_template, {'template':'robots.txt', 'mimetype':'text/plain'}),
 )
 
 if settings.DEBUG:
