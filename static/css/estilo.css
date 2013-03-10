@@ -1,0 +1,193 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*- Borda -*/
+#Top .menu li a, #Dia .menu li a, #Anuncie .menu li a, #Destaques .comment, #Chamada .maisinfor a, #Dia .box .numero
+{ -moz-border-radius: 13px; -webkit-border-radius: 13px; border-radius: 13px; behavior: ; border: solid 0 ; }
+
+#Dia .menu li a, ol#toc span .fb-comments-count,
+{ -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; behavior: url(border-radius.htc); border: solid 0 ; }
+
+ol#toc span .fb-comments-count, #Publique-Cont .doc p
+{ -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; behavior: url(border-radius.htc); border: solid 0 ; }
+
+/*NovoTopo*/
+#Top						{ height:49px; background:url(../img/top_bg.jpg) repeat-x;  }
+#Top .body 					{ width: 960px; height:49px; position: relative; margin:auto; }
+#Top .logo 					{ width: 153px; height:68px; position: absolute; bottom: -18px; right: 405px; }
+#Top .legenda				{ width: 380px; height:34px; float:left;  text-align:right; padding: 13px 0 0 0; }
+#Top .menu 					{ height: 48px; float: right; width:400px; }
+ #Top .menu ul				{ padding-top: 11px; }
+ #Top .menu li				{ list-style: none; float:right; }
+ #Top .menu li a			{ display: block; height: 30px; background:url(../img/top_publique.jpg) repeat-x; padding:6px 12px 0; font-size: 14px; font-weight:bold; color:#FFF; text-decoration:none; }
+ #Top .menu li a:hover		{ background-position: 0px -30px; }
+
+#Calendario					{ width: 100%;  height: 54px; background:#edeff0; background-image:url(../img/calendario_bg.jpg);}
+ #Calendario .body			{ width: 960px; height: 54px;  margin:auto; }
+
+ #CalDia ul					{ margin: 0; padding: 20px 0 0 10px; float: left; 	}
+ #CalDia ul li				{ display: inline; }
+ #CalDia ul li a			{ float: left; text-decoration: none; color: #fff;	padding: 2px 3px;  margin-right: 4px; font-weight:bold; font-size:15px; }
+ #CalDia .normal			{ color:#565454; font-weight:bold; }
+ #CalDia .normal:hover		{ color:#FFF; background-image:url(../img/calendario_normal-bg.jpg); background-repeat:no-repeat; }
+ #CalDia .normal-a			{ color:#FFF; background-image:url(../img/calendario_normal-bg.jpg); background-repeat:no-repeat; }
+ #CalDia .sexta				{ color:#e6ba09; font-weight:bold; }
+ #CalDia .sexta:hover		{ color:#FFF; background-image:url(../img/calendario_sexta-bg.jpg);  background-repeat:no-repeat; }
+ #CalDia .sexta-a			{ color:#FFF; background-image:url(../img/calendario_sexta-bg.jpg);  background-repeat:no-repeat; }
+ #CalDia .sabado			{ color:#fe973b; font-weight:bold; }
+ #CalDia .sabado:hover		{ color:#FFF; background-image:url(../img/calendario_sabado-bg.jpg); background-repeat:no-repeat;}
+ #CalDia .sabado-a			{ color:#FFF; background-image:url(../img/calendario_sabado-bg.jpg); background-repeat:no-repeat;}
+ #CalDia .domingo			{ color:#fa7474; font-weight:bold; border-right: solid 1px #cccccc; padding-right:7px;  }
+ #CalDia .domingo:hover		{ color:#FFF; background-image:url(../img/calendario_domingo-bg.jpg); background-repeat:no-repeat; }
+ #CalDia .domingo-a			{ color:#FFF; background-image:url(../img/calendario_domingo-bg.jpg); background-repeat:no-repeat; border-right: solid 1px #cccccc; padding-right:7px;}
+ #CalDia .divisor			{ border-left: #666 solid 1px; }
+
+#CalMes						{ width:110px; color:#5b5b5b; font-weight:bold; font-size:19px; padding: 9px 0 0 5px; height: 35px; float:left; letter-spacing: -1px;}
+
+
+#Chamada 					{ height:500px; background:url(../img/chamada_bg_SeuJorge.jpg) repeat-x #d0dcc8; }
+ #Chamada .Body    		    { width:960px; height: 500px; margin:auto; background-image: url(../img/chamada_SeuJorge.jpg); background-position:right top; background-repeat:no-repeat;}
+ #Chamada .data				{ float: left; width: 600px; height: 410px; padding: 130px 0 0 0;}
+ #Chamada .titulo           { color:#c84307; font-size: 55px;  letter-spacing: -1px; margin:0; letter-spacing: -3px; font-weight: bold; }
+ #Chamada .subtitulo        { color:#e67534; font-size: 30px; letter-spacing: -1px; margin:0 0 30px 0; line-height:32px; font-weight: bold; line-height: 15px;}
+ #Chamada .local            { color:#9f482d; font-size: 30px; letter-spacing: -1px; margin:0; font-weight: bold; line-height: 30px;}
+ #Chamada .datah            { color:#444444; font-size: 35px; letter-spacing: -1px; margin:0; font-weight: bold;}
+ #Chamada .maisinfor		{ width: 190px; height:35px; margin-top: 30px;  }
+ #Chamada .maisinfor a		{ background-color:#f27d81;  color:#FFF; font-weight:bold; font-size: 18px; padding:5px 13px 7px; text-decoration:none; }
+ #Chamada .maisinfor a:hover{ background-color:#F69; }
+ #Chamada .imagem			{ float: right; width: 520px; height: 523px;}
+
+#Destaques					{ height:480px; background: /*url(../img/destaque_bg.jpg) repeat-x */#e5ece1; }
+ #Destaques .Body			{ width:960px; margin:auto;  padding: 40px 0; }
+ #Destaques .Col			{ width:213px; height: 400px; float:left; margin:0 13px; text-align:center; }
+ #Destaques .ColDir			{ width:210px; height: 400px; float:right; text-align:center;  }
+ #Destaques h1				{ margin:10px 0 0 0; font-size:20px; color:#c84307; text-align:center; letter-spacing: -1px; line-height: 22px;}
+ #Destaques h2				{ color:#444444; font-size:20px; margin:0; letter-spacing:-1px; }
+ #Destaques img				{ border:0; }
+ #Destaques .comment		{ width: 122px; height:20px; margin:12px auto 0; padding: 2px 8px; color:#FFF; font-size:12px; font-weight:bold;  background: url(../img/comment-icon.png) #e67534 no-repeat 8px 4px;}
+ #Destaques span			{ float:right; }
+ #Destaques .fb-comments-count { float:left; margin-left:22px;}
+
+/* Rodapé*/
+#Rodape						{ width: 100%;  height: 100px; border-top: solid #eb4669 2px; }
+ #Rodape .body				{ width: 960px; height: 100px; margin:auto;}
+ #Rodape .links				{ height:50px; background-color:#; border-bottom: solid 2px #e1dede; }
+ #Rodape .frase				{ width:50%; float:left; font-size: 11px; color:#7e7e7e; padding: 15px 0 0 0; }
+ #Rodape .menu				{ width:50%; float:right; padding: 15px 0 0 0; text-align:right; }
+ #Rodape .menu ul			{  }
+ #Rodape .menu li			{ list-style:none; display:inline; }
+ #Rodape .menu li a			{ font-size: 11px; color: #6f6d6d; text-decoration:none; border-right: #CCC solid 1px; height:3px; padding: 0 5px }
+ #Rodape .menu li a:hover	{ color: #eb4669; }
+ #Rodape .copyright			{ height: 48px; padding: 10px 0 0 0; }
+ #Rodape .copyright p		{ margin:0; font-size: 11px; color:#7e7e7e; }
+
+/*Pagina DIA*/
+
+#Dia						{ width:100%;  height:850px; background:url(../img/bg_universal.jpg) #f2f2f2 repeat-x; }
+ #Dia .Body					{ width:960px; height:778px;  margin:auto; padding-top: 50px; }
+
+#Dia .menu					{ height:50px; border-bottom: solid 3px #e7e7e7; }
+ #Dia .menu h1				{ color:#5c5c5c; font-size:30px; letter-spacing:-2px; float:left; margin:8px 25px 0 0; }
+ #Dia .menu ul				{ padding-top: 14px; }
+ #Dia .menu li				{ list-style: none; float:left; }
+ #Dia .menu li a			{ display: block; height: 25px;  padding:1px 7px 0; margin: 0 5px 0 0; font-size: 18px; font-weight:bold; color:#828282; text-decoration:none; }
+ #Dia .menu li a:hover		{ background-position: 0px -30px; background:url(../img/dia/bt_tipoEvento.png) repeat-x #f16886; color:#FFF;}
+ #Dia .menu li .ativo		{ background-position: 0px -30px; background:url(../img/dia/bt_tipoEvento.png) repeat-x #f16886; color:#FFF;}
+
+#conteudobox				{ width: 960px; height:700px; margin-top: 25px; }
+
+#Dia .box 				    { background-color: #F00; }
+ #Dia .box ul				{  }
+ #Dia .box li				{ background-color: #; margin: 15px 6px 0 0; list-style: none; float:left;}
+ #Dia .box li:hover			{ background-color:#DDD; }
+ #Dia .box a				{ border:0; color:#000; width: 185px; float:left; margin: 5px 0px 0; padding:5px 10px; text-decoration:none;}
+ #Dia .box a:hover			{ border:0; color:#F0F;}
+ #Dia .box .coment			{ font-size:12px; font-weight:bold; color:#aaa9a9;}
+ #Dia .box .evento			{ font-size: 14px; color: #504f4f; margin: 0; line-height: 16px; margin-top: 3px; font-weight:bold; letter-spacing: -1px; height: 50px; }
+ #Dia .box .horario			{ font-size: 14px; color: #ed702b; margin: 0; font-weight:bold; }
+ #Dia .box .numero			{ background-color:#44c1ed; color:#FFF; float:right;  text-align: center; font-size:12px;  padding:0 4px 0 3px;}
+ #Dia .box .fb-comments-count		{ color:#1ca4d7; font-weight:bold; font-size:14px; margin-top: 5px; border-bottom: 1px dashed #CCC; padding-bottom: 5px; }
+
+
+#Dia .semevento				{ height:600px; width:100%;  background:url(../img/dia/bg_semevento.jpg) no-repeat center; }
+ #Dia .semeventoA			{ width:457px; height:61px; padding:280px 0 0 0; margin:auto;}
+ #Dia .semevento h1			{ font-size:22px; color:#808080; float:left; text-align:left; margin-left:20px; }
+ #Dia .semevento h2			{ font-size:18px; color:#808080; font-weight: normal; float:left; margin-left:20px;}
+
+/* Pagina FESTA */
+#Festa						{ width:100%;  height: 830px; background:url(../img/bg_universal.jpg) repeat-x #f2f2f2;}
+#Festa .body				{ width:960px; height: 740px; padding: 60px 0 0 0; margin:auto;}
+#Festa .social				{ width:206px; height:740px; float:left;}
+ #Festa .seta				{ width:30px;  height:740px; float:left; text-align:right;}
+ #Festa .conteudo			{ width:683px; background-color:#FFF; float:left; padding:20px;}
+ #Festa .cont-topo			{ }
+ #Festa .cont-topo h1		{ font-size:24px; color:#e66680; letter-spacing:-1px; margin:0 0 15px 0; }
+ #Festa .cont-topo .leg		{ font-size:16px; font-weight:bold; color:#5b5b5b; }
+ #Festa .cont-topo .txr		{ font-size:16px; font-weight:bold; color:#a9a9a9; }
+ #Festa .cont-infor 			{ padding: 10px 0; border-top: 1px solid #e6e6e6; margin-top:10px; font-size:12px; color:#282828; line-height:18px;}
+ #Festa .cont-infor h1		{ font-size: 14px; color:#e66680; margin: 0 0 5px 0; }
+
+ #Festa .cont-menu 			{ height: 30px; float: right;  width:100%; margin: 15px 0; border: 1px solid #cececf; background-image:url(../img/festa/menu_bg.gif); }
+ #Festa .cont-menu ul		{ }
+ #Festa .cont-menu li		{ list-style: none; float:left; border-right: 1px solid #cececf; }
+ #Festa .cont-menu li a		{ display: block; height: 28px; padding:6px 12px 0; font-size: 12px; font-weight:bold; color:#7b7b7b; text-decoration:none; }
+ #Festa .cont-menu li a:hover{ background-position: 0px -30px; background-image:url(../img/festa/menu_bgHover.gif); }
+ #Festa .cont-menu li .ativo { background-position: 0px -30px; background-image:url(../img/festa/menu_bgHover.gif); }
+
+  div.content 				{ clear: left;  }
+  div.content.inactive 		{ display: none; }
+
+ ol#toc 					{ height: 2.2em; list-style: none; font-size: 13px; margin: 20px 0 15px 0; padding: 0; background:#09F; background-image:url(../img/festa/menu_bg.gif); border: 1px solid #cececf;}
+  ol#toc a 					{ color:#7b7b7b; font-weight:bold; display: block; float: left; height: 2.1em;  text-decoration: none; border-right: 1px solid #cececf; padding: 5px 7px;}
+  ol#toc a:hover 			{ background-image:url(../img/festa/menu_bgHover.gif); }
+  ol#toc a:hover span 		{ background-position: 100% -120px; }
+  ol#toc li 				{ float: left; margin: 0 0 0 0;   }
+  ol#toc li a.active 		{ background-color: #48f; padding: 5px 7px; background-position: 0 -60px; color: #fff; font-weight: bold; background-image:url(../img/festa/menu_bgHover.gif); color:#7b7b7b;  }
+  ol#toc li a.active span 	{ }
+  ol#toc span				{ background: url(tabs.gif) 100% 0; line-height: 15px;  }
+  ol#toc span .fb-comments-count { width: 17px; color:#FFF; background-color:#F66;  padding: 1px 5px; font-size:13px; font-weight:bold;  line-height: 0; }
+
+
+
+/* Publique */
+#Publique					{ width:100%;  }
+#Publique-titulo			{ width:100%; height: 235px; padding: 100px 0 0 0; letter-spacing:-1px; background:url(../img/publique/publique.bg.jpg) #f2f1ed  repeat-x; }
+#Publique-titulo h1			{ color:#ed3d63; font-size:36px; margin:auto; text-align:center;  }
+#Publique-titulo h2			{ color:#a6a3a3; font-size:24px; margin:auto; text-align:center; font-weight:normal; }
+
+#Publique-Cont				{ width:100%; height:440px; background-color:#fafafa; border-top: 3px solid #e9e8e8; padding: 50px 0 0 0; }
+#Publique-Cont .body		{ width:960px; height:340px;  margin:auto; }
+#Publique-Cont .doc			{ width:230px; height:340px; float:left; text-align:center; }
+#Publique-Cont .doc p		{ height:30px; width:206px; margin:10px auto 0; color:#FFF; font-weight: bold; padding: 5px 0 0 0; background-image:url(../img/publique/bt.publique.jpg); }
+#Publique-Cont .doc p:hover	{ height:30px; width:206px; color:#FFF; font-weight: bold;  background-image:url(../img/publique/bt.publique-a.jpg); }
+#Publique-Cont .doc a		{ text-decoration:none; }
+
+#Publique-Cont .regras		{ width:468px; height:340px; padding: 0 15px; float:left; border-left: #dadada 1px solid; border-right: 1px solid #dadada; }
+#Publique-Cont .regras h1	{ color:#ed3d63; font-size:18px; letter-spacing:-1px; margin-bottom: 40px; }
+#Publique-Cont .regras h2	{ font-size:16px; color:#5b5b5b; }
+#Publique-Cont .regras p	{ font-size:12px; color:#454545; line-height: 18px; }
+
+#Publique-Cont .importante 	{ width:260px; height:340px; float:left; padding: 0 0 0 15px }
+#Publique-Cont .importante h1{ color:#ed3d63; font-size:18px; letter-spacing:-1px; margin-bottom: 40px; }
+#Publique-Cont .importante p{ font-size:12px; color:#454545; line-height: 18px;}
+
+
+/*-- Anuncie --*/
+#Anuncie					{ width:100%; height:800px; background:url(../img/anuncie/bg.png) #f2f2f2 repeat-x; }
+#Anuncie .body				{ width:960px; height:500px; margin:auto; padding-top:90px; }
+
+#Anuncie .titulo			{ text-align:center; margin: 0 0 40px 0;}
+#Anuncie .titulo h1			{ font-size: 26px; color:#626262; font-weight:normal; letter-spacing:-1px; }
+#Anuncie .menu				{ }
+#Anuncie .menu ul			{ height: 27px; margin: 0 auto 15px; width:325px; width:318px\9; /*background-color:#333; background-image:url(../img/anuncie/bt.a.png);*/}
+#Anuncie .menu li			{ list-style: none; float:left; }
+#Anuncie .menu li a			{ display: block; height: 30px; padding:2px 15px 0; font-size: 20px; font-weight:bold; color:#5f5f5f; text-decoration:none; }
+#Anuncie .menu li a:hover	{ background-position: 0px -30px; background-image:url(../img/anuncie/bt.b.jpg); color:#FFF;  }
+#Anuncie .menu li .ativo 	{ background-position: 0px -30px; background-image:url(../img/anuncie/bt.b.jpg); color:#FFF;}
+#Anuncie .img				{ text-align:center; }
+#Anuncie .boxbody			{ width: 900px; margin:auto; height: 300px; padding: 20px 0 0 0;   }
+#Anuncie .box				{ width: 260px; height:150px; float:left; padding: 0 20px; }
+#Anuncie .borda				{ width: 370px; height:150px; border-right: solid 1px #dadada; border-left: solid 1px #dadada;  float:left; padding: 0 20px; }
+#Anuncie .box h1, .borda h1	{ font-size:22px; color:#3c3c3c; margin:0 0 20px 0; letter-spacing:-1px; }
+#Anuncie .box p, .borda p	{ font-size:12px; color:#2d2d2d; line-height:19px; }
+

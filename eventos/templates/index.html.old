@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load absurl %}
+
+{% block corpo %}
+  <!-- Chamada -->
+  <div id="Chamada">
+	<div class="Body">
+		<div class="data">
+        	<h1>Bloquinho Ressaca</h1>
+        	<h2>ASCADE <br>Setor de Clubes Sul</h2>        
+        	<h3>16 Fev</h3>
+            <div class="maisinfor"><a href="{% url eventos:informacoes 'jorge-mateus-vip' %}">mais informações</a></div>
+        </div>
+	</div>
+  </div>
+  <!--//Chamada-->
+
+  <!-- Destaques -->
+  <div id="Destaques">
+      <div class="Body">
+      
+    {% for evento in eventos %}
+    <a href="{% url eventos:informacoes evento.slug %}">
+            <div class="Col">
+                <img src="{{ evento.imagem.url }}" width="201" height="291" /><h1>{{ evento.nome }}</h1>
+                <h2>{{ evento.data|date:"d"}} {{ evento.data|date:"M" }}</h2>
+                <div class="comment">
+                    <div class="fb-comments-count"  data-href="{% absurl eventos:informacoes evento.slug %}">0</div>
+                	<span>comentarios</span>
+                </div>  
+            </div>
+        </a>
+
+    {% endfor %}
+      </div>
+  </div>
+  <!--//Destaques-->
+
+{% endblock %}

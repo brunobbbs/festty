@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load absurl %}
+{% load truncatewords %}
+
+{% block corpo %}
+
+  <!-- Chamada -->
+  <div id="Chamada">
+	<div class="Body">
+		<div class="data">
+        	<p class="titulo">Salve Salve</p>
+            <p class="subtitulo">Seu Jorge e Ellen Oléria</p>
+
+        	<p class="local">Orla - Clube de Engenharia<br />de Brasília</p>
+        	<p class="datah">23 Mar</p>
+            <div class="maisinfor"><a href="{% url eventos:informacoes '2013-03-23-salve-salve-com-seu-jorge-e-ellen-oleria' %}">mais informações</a></div>
+        </div>
+	</div>
+  </div>
+  <!--//Chamada-->
+
+  <!-- Destaques -->
+  <div id="Destaques">
+      <div class="Body">
+
+
+        {% for evento in eventos %}
+        <a href="{% url eventos:informacoes evento.slug %}">
+            <div class="Col">
+                <img src="{{ evento.imagem.url }}" width="201" height="291" /><h1>{{ evento.nome|truncatewords_by_chars:40 }}</h1>
+                <h2>{{ evento.data|date:"d" }} {{ evento.data|date:"M" }}</h2>
+                <div class="comment">
+                    <div class="fb-comments-count"  data-href="{% absurl eventos:informacoes evento.slug %}">0</div>
+                	<span>comentarios</span>
+                </div>
+            </div>
+        </a>
+        {% endfor %}
+      </div>
+  </div>
+  <!--//Destaques-->
+
+  {% endblock %}
+

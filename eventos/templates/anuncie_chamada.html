@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}Destaque o que é bom!{% endblock %}
+
+
+{% block corpo %}
+   <!-- Anuncie -->
+   <div id="Anuncie">
+   	<div class="body">
+
+		<!--logo-->
+   		<div class="titulo">
+            <img src="{{ STATIC_URL }}img/anuncie/anuncie-logo.png" width="195" height="34" />
+            <h1>Destaque o que é bom!</h1>
+ 		</div>
+   
+   		<!--menu-->
+        <div class="menu">
+        	<ul>
+                <li><a href="{% url eventos:chamada %}" class="ativo">na chamada</a></li>
+                <li><a href="{% url eventos:destaque %}">nos destaques</a></li>
+            </ul>
+        </div>
+   
+   		<!--imagem-->
+        <div class="img" >
+            <img src="{{ STATIC_URL }}img/anuncie/nachamada.png" width="921" height="368" />
+        </div>
+
+		<!--box -->   
+        <div class="boxbody">
+  
+          <div class="box">
+              <h1>O que você precisa</h1>
+              <p>imagem do evento .jpg .gif  .png  .cdr<br>horario<br>nome do evento<br>local<br>pagina de evento (cadastrada)</p>
+          </div>
+          <div  class="borda">
+              <h1>As Regras</h1>
+              <p>expire o momento da busca do sistema que é obsoleto mas é altamente recomendavel publica pode ser?!</p>
+          </div>
+          <div  class="box">
+              <h1>Entre em contato</h1>
+              <p>Afim de ter um compromisso serio, pedimos que entre em contato solicitando o anuncio</p></div>
+       </div>
+   
+    </div>
+</div>
+
+{% endblock %}

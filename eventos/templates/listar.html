@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load absurl %}
+
+{% block title %} {{ dia }} de {{ mes }} {% endblock %}
+
+{% block corpo %}
+
+<!-- Dia -->
+  <div id="Dia">
+    <div class="Body">
+
+      <!-- menu // Esse é o fitro de (festas/Shows) esta desabilitado até termos conteúdo -->
+        <div class="menu">
+            <h1>{{ dia }} de {{ mes }}</h1>
+            <!--<ul>
+              <li><a href="festa-01-festa.aspx" class="ativo">Todos</a></li>
+              <li><a href="festa-01-festa.aspx">festas</a></li>
+              <li><a href="festa-01-show.aspx">shows</a></li>
+            </ul> -->
+        </div>
+
+
+      <!-- Box -->
+      <div id="conteudo">
+
+        {% for evento in eventos %}
+            <ul class="box">
+              <li>
+              <a href="{% url eventos:informacoes evento.slug %}">
+                    <img src="{{ evento.imagem.url }}" width="166" height="222" />
+                    <div class="fb-comments-count" data-href="{% absurl eventos:informacoes evento.slug %}"><span class="coment">comentários</span><span class="numero">0</span></div>
+                    <p class="evento">{{ evento.nome }}</p>
+                </a>
+              </li>
+	        </ul>
+
+
+        {% empty %}
+
+            {% include 'festa_semeventos.html' %}
+
+        {% endfor %}
+
+      </div>
+    
+  </div>
+  <!--//Dia-->
+  </div>
+
+{% endblock %}

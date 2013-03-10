@@ -1,0 +1,12 @@
+{% load calendario %}
+
+<ul id="#classCalDia">
+
+    {% for dia in dias %}
+
+    <li><a href="{% url eventos:listar dia|keyvalue:'ano', dia|keyvalue:'mes', dia|keyvalue:'dia' %}"
+           class="{{ dia|keyvalue:'dia_semana' }}">{{ dia|keyvalue:'dia' }}</a></li>
+
+    {% endfor %}
+
+</ul>

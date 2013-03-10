@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+    {% block title %} A dois cliques da diversão. {% endblock %} | Festty - Brasília
+</title>
+
+<!-- meta tags -->
+<meta name="description" content="As melhores festas, shows, eventos e baladas em Brasília - DF">
+<meta name="keywords" content="festas, shows, baladas, eventos, brasilia, festty, df"> 
+<meta name="author" content="Bruno Barbosa, Jorge Henrique"> 
+<meta name="robots" content="index, follow">
+<meta name="generator" content="Django">
+<!-- // meta tags -->
+
+<!-- Css -->
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/estilo.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{ STATIC_URL }}js/mes/css/style.css" />
+
+   <!-- Menu-mes -->
+   <script type="text/javascript" src="{{ STATIC_URL }}js/mes/css/style.css"></script>
+   <script type="text/javascript" src="{{ STATIC_URL }}js/mes/js/modernizr.custom.79639.js"></script>
+
+
+   <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" type="text/css" media="all" />
+   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js" type="text/javascript"></script>
+
+   <!-- Tiny_mce -->
+   <script type="text/javascript"
+           src="{{ STATIC_URL }}js/tiny_mce/tiny_mce.js"></script>
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/tiny_mce/tiny_mce_config.js"></script>
+
+
+   <!-- FacebookAPI -->
+   <meta property="fb:admins" content="{100002013720020}"/>
+   <meta property="fb:app_id" content="{121749754668714}"/>
+</head>
+
+<body>
+
+
+  <!-- FacebookAPi -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      // init the FB JS SDK
+      FB.init({
+        appId      : '121749754668714', // App ID from the App Dashboard
+        channelUrl : '//www.festty.com.br', // Channel File for x-domain communication
+        status     : true, // check the login status upon init?
+        cookie     : true, // set sessions cookies to allow your server to access the session?
+        xfbml      : true  // parse XFBML tags on this page?
+      });
+  
+      // Additional initialization code such as adding Event Listeners goes here
+  
+    };
+  
+    // Load the SDK's source Asynchronously
+    // Note that the debug version is being actively developed and might 
+    // contain some type checks that are overly strict. 
+    // Please report such bugs using the bugs tool.
+    (function(d, debug){
+       var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement('script'); js.id = id; js.async = true;
+       js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+       ref.parentNode.insertBefore(js, ref);
+     }(document, /*debug*/ false));
+  </script>
+  <!--FacebookAPi-->
+
+
+  <!-- Top -->
+  <div id="Top">
+    <div class="body">
+
+      <div class="logo">
+          <a href="{% url index %}"><img src="{{ STATIC_URL }}img/top_logo.png" width="153" height="64" border="0" /></a></div>
+
+      <div class="legenda">
+          <img src="{{ STATIC_URL }}img/top_clique.png" width="241" height="27" /></div>
+      <div class="menu">
+        <ul>
+            <li><a href="{% url eventos:publique %}">Publique seu evento</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+  <!--//Top-->
+  
+  {% include 'calendario.html' %}
+
+
+  {% block corpo %}
+
+    <!-- content -->
+
+  {% endblock %}
+
+  <!-- Rodapé -->
+  <div style="clear:both;"><!--  clear --></div>
+  <div id="Rodape">
+  	<div class="body">
+
+	  <div class="links">
+        	<div class="frase">
+                <img src="{{ STATIC_URL }}img/rodape.jpg" width="50" height="19" />
+              a dois cliques da diversão
+            </div>
+        	<div class="menu">
+            	<ul>
+                    <li><a href="{% url eventos:publique %}">Publique seu evento</a></li>
+                    <li><a href="{% url eventos:chamada %}">Anuncie</a></li>
+                    <li><a href="/admin">Entrar</a></li>
+                </ul>
+            </div>
+        </div>
+
+	  <div class="copyright">
+      	<p>Copyright © 2013 Festty Inc -  Todas as festas são de responsabilidade dos seus provedores.</p>
+        <p>Brasília, Distrito Federal - BRA</p>
+        <p><a href="http://www.djangoproject.com/"><img src="https://www.djangoproject.com/m/img/badges/djangosite80x15_grey.gif" border="0" alt="A Django site." title="A Django site." /></a></p>
+      </div>
+
+    </div>
+  </div>
+  <!--//Rodapé-->
+    
+    {% include 'analytics.html' %}
+
+</body>
+</html>

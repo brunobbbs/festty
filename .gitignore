@@ -1,0 +1,14 @@
+# Ignorar arquivos .pyc, .pyo, etc.
+*.py[cod]
+
+# Ignorar arquivos específicos
+.DS_Store
+
+# Ignorar settings.py
+settings.py
+
+# Ignorar database.db
+*.db
+
+# Ignorar manage.py
+manage.py

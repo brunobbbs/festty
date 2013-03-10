@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block title %} Publique seu evento {% endblock %}
+
+{% block corpo %}
+
+<!-- Publique -->
+  <div id="Publique">
+
+      <div id="Publique-titulo">
+        <h1>Publique seu evento</h1>
+        <h2>Faça o melhor possivel para o seu evento</h2>      	
+      </div>
+ 
+	  <div id="Publique-Cont">
+   		<div class="body">
+
+              <div class="doc">
+                  <img src="{{ STATIC_URL }}img/publique/doc.jpg" width="204" height="284" />
+                  <a href="{{ STATIC_URL }}download/formulario_evento.doc"><p>Fazer Download</p></a>
+              </div>
+
+              <div  class="regras">
+                    <h1>Baixe o Formulário</h1>
+                    <table width="100%" border="0" height="300"  style="text-align:justify;">
+                      <tr valign="top">
+                          <td width="6%"><img src="{{ STATIC_URL }}img/publique/01.jpg" width="19" height="19" /></td>
+                        <td width="94%">
+                            <h2>Baixe e preencha o formulário</h2>
+                            <p>Forneça a maior quantidade de informações sobre o seu evento. <br />
+                        Solicitamos  dados precisos pra você informar e não deixar duvidas as pessoas que vão prestigiar o seu evento.</p></td>
+                      </tr>
+                      <tr valign="top">
+                          <td><img src="{{ STATIC_URL }}img/publique/02.jpg" width="19" height="19" /></td>
+                        <td>
+                            <h2>Envie para o nosso email</h2>
+                        <p>Ao preencher os dados no formulário que você baixou  envie para o email;</p>
+                        <p style="font-size:16px; color:#F66;"><b>publique@festty.com</b></p></td>
+                      </tr>
+                      <tr valign="top">
+                          <td><img src="{{ STATIC_URL }}img/publique/03.jpg" width="19" height="19" /></td>
+                        <td>
+                            <h2>Confirmação</h2>
+                            <p>Uma vez confirmado os dados seu evento é publicado em nosso site. É muito importante que seja informado  os dados de contato no documento para que possa receber a notificação de que seu evento foi publicado.</p>
+                        </td>
+                      </tr>
+                  </table>
+              </div>
+              <!--Requisitos-->
+              <div class="importante">
+                    <h1>Contato</h1>
+                    <p>Para tirar duvidas ou maiores informações entre em contato</p><br>
+                    <p style="font-size:20px; letter-spacing:-1px;"><b>+55 61 8275-0026</b></p>
+                    <br />
+                    <p style="font-size:20px; letter-spacing:-1px;"><b>+55 61 8121-7870</b></p>
+              </div>
+        </div>
+      </div>
+
+  </div>
+  <!--//Publique-->
+
+{% endblock %}
