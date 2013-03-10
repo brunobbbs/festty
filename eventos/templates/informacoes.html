@@ -1,7 +1,16 @@
 {% extends 'base.html' %}
 {% load absurl %}
+{% load truncatewords %}
 
 {% block title %} {{ evento.nome }} {% endblock %}
+
+{% block fbmetatags %}
+
+<meta property="og:title"            content="{{ evento.nome }} - Festty" /> 
+<meta property="og:image"            content="{{ evento.imagem.url }}" /> 
+<meta property="og:description"      content="{{ evento.sobre|striptags|truncatewords_by_chars:256 }}" />
+
+{% endblock %}
 
 {% block corpo %}
 
