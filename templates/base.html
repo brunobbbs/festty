@@ -7,12 +7,24 @@
 </title>
 
 <!-- meta tags -->
-<meta name="description" content="As melhores festas, shows, eventos e baladas em Brasília - DF">
-<meta name="keywords" content="festas, shows, baladas, eventos, brasilia, festty, df"> 
+<meta name="description" content="As melhores festas, shows, eventos, bares e baladas em Brasília - DF">
+<meta name="keywords" content="festas, shows, baladas, eventos, brasilia, bar, pub, bares, festty, df"> 
 <meta name="author" content="Bruno Barbosa, Jorge Henrique"> 
 <meta name="robots" content="index, follow">
 <meta name="generator" content="Django">
 <!-- // meta tags -->
+
+<!-- Facebook metatags -->
+
+{% block fbmetatags %}
+
+<meta property="og:title"            content="Festty - A dois cliques da diversão!" /> 
+<meta property="og:image"            content="{{ STATIC_URL }}img/top_logo.png" /> 
+<meta property="og:description"      content="As melhores festas, shows, eventos, bares e baladas em Brasília - DF" />
+
+{% endblock %}
+
+<!-- // Facebook metatags -->
 
 <!-- Css -->
     <link rel="stylesheet" href="{{ STATIC_URL }}css/estilo.css" type="text/css" media="all" />
