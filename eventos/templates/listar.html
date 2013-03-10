@@ -33,7 +33,12 @@
                       height="222" 
                       alt="{{ evento.nome }}"
                       title="{{ evento.nome }}" />
-                    <div class="fb-comments-count" data-href="{% absurl eventos:informacoes evento.slug %}"><span class="coment">comentários</span><span class="numero">0</span></div>
+                  <div class="fb-comments-count">
+                      <span class="coment">comentários</span>
+                      <span class="numero">
+                          <fb:comments-count href="{% absurl eventos:informacoes evento.slug %}"/>0</fb:comments-count>
+                      </span>
+                  </div>
                     <p class="evento">{{ evento.nome }}</p>
                 </a>
               </li>
