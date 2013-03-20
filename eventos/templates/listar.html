@@ -28,9 +28,9 @@
               <li>
               <a href="{% url eventos:informacoes evento.slug %}"
                  title="{{ evento.nome }}">
-                 <img src="{{ evento.imagem.url }}" 
-                      width="166" 
-                      height="222" 
+                 <img src="{{ evento.imagem.url }}"
+                      width="166"
+                      height="222"
                       alt="{{ evento.nome }}"
                       title="{{ evento.nome }}" />
                   <div class="fb-comments-count">
@@ -52,9 +52,12 @@
         {% endfor %}
 
       </div>
-    
+
   </div>
   <!--//Dia-->
-  </div>
+
+  <div style="clear:both;"></div>
+
+</div>
 
 {% endblock %}

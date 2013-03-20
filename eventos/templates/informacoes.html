@@ -6,8 +6,8 @@
 
 {% block fbmetatags %}
 
-<meta property="og:title"            content="{{ evento.nome }} - Festty" /> 
-<meta property="og:image"            content="{{ evento.imagem.url }}" /> 
+<meta property="og:title"            content="{{ evento.nome }} - Festty" />
+<meta property="og:image"            content="{{ evento.imagem.url }}" />
 <meta property="og:description"      content="{{ evento.sobre|striptags|truncatewords_by_chars:256 }}" />
 
 {% endblock %}
@@ -17,17 +17,17 @@
     <!-- Festa -->
   <div id="Festa">
   	<div class="body">
- 
+
         <div class="social">
-            <img src="{{ evento.imagem.url }}" 
-                 width="206" 
-                 height="280" 
-                 alt="{{ evento.nome }}" 
+            <img src="{{ evento.imagem.url }}"
+                 width="206"
+                 height="280"
+                 alt="{{ evento.nome }}"
                  title="{{ evento.nome }}"/></div>
-        
+
         <div class="seta">
             <img src="{{ STATIC_URL }}img/festa/seta.png" width="18" height="59" /></div>
-        
+
         <div class="conteudo">
 
 			<!--Topo-->
@@ -35,13 +35,13 @@
                 <h1>{{ evento.nome }}</h1>
 
                 <span class="leg">Data</span>
-                <span class="txr">{{ evento.data|date:"d/m/Y" }}</span><br>                        
+                <span class="txr">{{ evento.data|date:"d/m/Y" }}</span><br>
 
                 <span class="leg">Hora</span>
-                <span class="txr">{{ evento.hora }}</span><br>                        
+                <span class="txr">{{ evento.hora }}</span><br>
 
                 <span class="leg">Local</span>
-                <span class="txr">{{ evento.local }}</span><br>                                      
+                <span class="txr">{{ evento.local }}</span><br>
             </div>
             <!-- TAB -->
             <ol id="toc">
@@ -72,22 +72,24 @@
 
             <div class="content" id="page-2">
               <!--Facebook/Commenrt-->
-              <div class="fb-comments" 
-                  data-href="{% absurl eventos:informacoes evento.slug %}" 
-                   data-width="645" 
+              <div class="fb-comments"
+                  data-href="{% absurl eventos:informacoes evento.slug %}"
+                   data-width="645"
                    data-num-posts="10">
                </div>
             </div>
-            
+
             <div class="content" id="page-3">
                 {{ evento.mapa|safe }}
             </div>
 
-        </div>    
+        </div>
 
     </div>
-    <div style="clear:both;"></div>
-  </div>
+
+  <div style="clear: both;"></div>
+
+</div>
   <!--//Festa-->
 
   <!--Tab-->
