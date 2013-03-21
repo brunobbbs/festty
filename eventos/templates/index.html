@@ -2,6 +2,9 @@
 {% load absurl %}
 {% load truncatewords %}
 
+{% block title %} Show do Seu Jorge e Ellen Oléria em Brasília - 2013 {% endblock %}
+{% block keywords %} seu jorge, ellen oleria {% endblock %}
+
 {% block corpo %}
 
   <!-- Chamada -->
@@ -28,8 +31,8 @@
         <a href="{% url eventos:informacoes evento.slug %}"
            title="{{ evento.nome }}">
             <div class="Col">
-                <img src="{{ evento.imagem.url }}" 
-                     width="201" 
+                <img src="{{ evento.imagem.url }}"
+                     width="201"
                      height="291"
                      alt="{{ evento.nome }}"
                      title="{{ evento.nome }}" /><h1>{{ evento.nome|truncatewords_by_chars:40 }}</h1>
