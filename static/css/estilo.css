@@ -45,26 +45,27 @@ ol#toc span .fb-comments-count, #Publique-Cont .doc p
 #CalMes						{ width:110px; color:#5b5b5b; font-weight:bold; font-size:19px; padding: 9px 0 0 5px; height: 35px; float:left; letter-spacing: -1px;}
 
 
-#Chamada 					{ height:500px; background:url(../img/chamada_bg_SeuJorge.jpg) repeat-x #d0dcc8; }
- #Chamada .Body    		    { width:960px; height: 500px; margin:auto; background-image: url(../img/chamada_SeuJorge.jpg); background-position:right top; background-repeat:no-repeat;}
- #Chamada .data				{ float: left; width: 600px; height: 410px; padding: 130px 0 0 0;}
- #Chamada .titulo           { color:#c84307; font-size: 55px;  letter-spacing: -1px; margin:0; letter-spacing: -3px; font-weight: bold; }
- #Chamada .subtitulo        { color:#e67534; font-size: 30px; letter-spacing: -1px; margin:0 0 30px 0; line-height:32px; font-weight: bold; line-height: 15px;}
- #Chamada .local            { color:#9f482d; font-size: 30px; letter-spacing: -1px; margin:0; font-weight: bold; line-height: 30px;}
- #Chamada .datah            { color:#444444; font-size: 35px; letter-spacing: -1px; margin:0; font-weight: bold;}
+#Chamada     				{ height:500px; background:url(../img/chamada_bg_McCatra.jpg) repeat-x #282a36; }
+ #Chamada .Body            	{ width:960px; height: 500px; padding: 0 0 0 30px; margin:auto; background-image: url(../img/chamada_McCatra.jpg); background-position:right top; background-repeat:no-repeat;}
+
+#Chamada .data				{ float: left; width: 600px; height: 410px; padding: 100px 0 0 0;}
+ #Chamada .titulo           { color:#c5cbc1; font-size: 72px;  letter-spacing: -1px; margin:0; letter-spacing: -3px; font-weight: bold; }
+ #Chamada .subtitulo        { color:#737476; font-size: 36px; letter-spacing: -1px; margin:0 0 30px 0; line-height:32px; font-weight: bold; line-height: 15px;}
+ #Chamada .local            { color:#c6b675; font-size: 36px; letter-spacing: -1px; margin:0; font-weight: bold; line-height: 30px;}
+ #Chamada .datah            { color:#fff; font-size: 35px; letter-spacing: -1px; margin:0; font-weight: bold;}
  #Chamada .maisinfor		{ width: 190px; height:35px; margin-top: 30px;  }
  #Chamada .maisinfor a		{ background-color:#f27d81;  color:#FFF; font-weight:bold; font-size: 18px; padding:5px 13px 7px; text-decoration:none; }
  #Chamada .maisinfor a:hover{ background-color:#F69; }
  #Chamada .imagem			{ float: right; width: 520px; height: 523px;}
 
-#Destaques					{ height:480px; background: /*url(../img/destaque_bg.jpg) repeat-x */#e5ece1; }
+#Destaques					{ height:480px; background: /*url(../img/destaque_bg.jpg) repeat-x */#e8e8e8; }
  #Destaques .Body			{ width:960px; margin:auto;  padding: 40px 0; }
- #Destaques .Col			{ width:213px; height: 400px; float:left; margin:0 13px; text-align:center; }
+ #Destaques .Col			{ width:213px; height: 400px; float:left;  margin:0 13px; text-align:center; }
  #Destaques .ColDir			{ width:210px; height: 400px; float:right; text-align:center;  }
- #Destaques h1				{ margin:10px 0 0 0; font-size:20px; color:#c84307; text-align:center; letter-spacing: -1px; line-height: 22px;}
- #Destaques h2				{ color:#444444; font-size:20px; margin:0; letter-spacing:-1px; }
+ #Destaques h1				{ margin:10px 0 0 0; font-size:20px; color:#444444; text-align:center; letter-spacing: -1px; line-height: 22px;}
+ #Destaques h2				{ color:#737476; font-size:20px; margin:0; letter-spacing:-1px; }
  #Destaques img				{ border:0; }
- #Destaques .comment		{ width: 122px; height:20px; margin:12px auto 0; padding: 2px 8px; color:#FFF; font-size:12px; font-weight:bold;  background: url(../img/comment-icon.png) #e67534 no-repeat 8px 4px;}
+ #Destaques .comment		{ width: 122px; height:20px; margin:12px auto 0; padding: 2px 8px; color:#FFF; font-size:12px; font-weight:bold;  background: url(../img/comment-icon.png) #c6b675 no-repeat 8px 4px;}
  #Destaques span			{ float:right; }
  #Destaques .fb-comments-count { float:left; margin-left:22px;}
 
