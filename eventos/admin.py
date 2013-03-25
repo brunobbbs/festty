@@ -1,6 +1,6 @@
 #-*- coding: utf-8 -*-
 
-from festty.eventos.models import Eventos
+from festty.eventos.models import Eventos, Estado, Bairro
 from django.contrib import admin
 
 from festty.settings import STATIC_URL
@@ -19,4 +19,12 @@ class EventosAdmin(admin.ModelAdmin):
     exclude = ('destaque',)
 
 
+class BairroAdmin(admin.ModelAdmin):
+    list_display = ('nome',)
+    list_filter = ('uf',)
+    search_fields = ('nome',)
+
+
 admin.site.register(Eventos, EventosAdmin)
+admin.site.register(Estado)
+admin.site.register(Bairro, BairroAdmin)
