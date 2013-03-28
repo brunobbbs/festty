@@ -43,8 +43,6 @@ class Eventos(models.Model):
     tipo = models.CharField(choices=TIPO_EVENTO, default='Festa', max_length=10)
     data = models.DateField()
     hora = models.CharField(max_length=3)
-    estado = models.ForeignKey(Estado, default=Estado.objects.filter(sigla__exact='DF'))
-    bairro = models.ForeignKey(Bairro, default=Bairro.objects.filter(nome__exact='Brasília'))
     local = models.CharField(max_length=140)
     imagem = models.ImageField(upload_to='images/%Y/%m/%d')
     sobre = models.TextField()
